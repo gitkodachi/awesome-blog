@@ -1,46 +1,48 @@
 # awesome-blog
 
 This is the theme template repository! **Please** follow the installation instructions below.
-If you're looking for the actual theme repository, follow this [link](https://github.com/Chrede88/qubt).
 
-## Installation
+Ini adalah repositori template tema! **Harap** ikuti instruksi instalasi di bawah ini.  
+Jika Anda mencari repositori tema sebenarnya, ikuti [tautan ini](https://github.com/Chrede88/qubt).
 
-1) Use this template by pressing `Use this template`. **Don't fork this repository!**
-2) Wait 20s-30s and update the page. The `Clean Template` workflow will run automatically, creating/poplutating files based on your Github user.
-3) Add a LICENSE to your repo.
-4) Clone your version of the template to your local computer:
+## Instalasi
+
+1) Gunakan template ini dengan menekan `Use this template`. **Jangan fork repositori ini!**  
+2) Tunggu 20–30 detik lalu perbarui halaman. Workflow `Clean Template` akan berjalan secara otomatis, membuat/mengisi berkas berdasarkan pengguna Github Anda.  
+3) Tambahkan LICENSE ke repositori Anda.  
+4) Clone versi template Anda ke komputer lokal:  
 ```shell
 git clone https://github.com/<username>/<reponame>
 ```
-5) Change the module name to match your github repo in `go.mod`.
-6) Modify `config/_default/hugo.yaml`, `config/_default/params.yaml` and `config/_default/menus.yaml` according to to your needs. Find more info on the theme [wiki](https://github.com/chrede88/qubt/wiki/Configuration).
-7) Add your blog posts to `content/blog/`. See the [wiki](https://github.com/chrede88/qubt/wiki/Content) or example posts for reference.
-8) Modify `content/about.md` so it matches your preferences.
-10) Build a local version of your site by executing `hugo server`. You can see the site by navigating to `localhost:1313` (actual URL will be outputted in the CLI) in a browser.
+5) Ubah nama modul agar sesuai dengan repositori github Anda di `go.mod`.
+6) Ubah `config/_default/hugo.yaml`, `config/_default/params.yaml` dan `config/_default/menus.yaml` sesuai kebutuhan Anda. Informasi lebih lanjut dapat ditemukan di [wiki tema](https://github.com/chrede88/qubt/wiki/Configuration).
+7) Tambahkan postingan blog Anda ke `content/blog/`. Lihat [wiki](https://github.com/chrede88/qubt/wiki/Content) atau contoh postingan untuk referensi.
+8) Ubah `content/about.md` agar sesuai dengan preferensi Anda.
+9) Bangun versi lokal situs Anda dengan menjalankan hugo server. Anda dapat melihat situs dengan membuka `localhost:1313` (URL sebenarnya akan ditampilkan di CLI) di browser.
 
 ---
 
-## Features
+## Fitur
 
-- Simple personal blog theme, designed for mobile-first.
-- Automatic dark mode (based on system setttings).
-- Emoji support for a fun design.
-- Healthcheck endpoint (/healthcheck.json).
-
----
-
-## Configuration
-
-See the [wiki](https://github.com/chrede88/qubt/wiki) for all info about configuration and how to easily deploy to Github Pages.
+- Tema blog pribadi sederhana, dirancang untuk mobile-first.
+- Mode gelap otomatis (berdasarkan pengaturan sistem).
+- Dukungan emoji untuk desain yang menyenangkan.
+- Endpoint healthcheck (/healthcheck.json).
 
 ---
 
-## Update the Theme Version
-The theme version used to build the site is defined in `go.mod` file.
+## Konfigurasi
 
-The best practice is to update to released and tested versions. To update to a specific version execute the following command in a terminal/commandline (at the root path of your site repo):
+Lihat [wiki](https://github.com/chrede88/qubt/wiki) ntuk semua informasi tentang konfigurasi dan cara mudah melakukan deploy ke Github Pages.
+
+---
+
+## Perbarui Versi Tema
+Versi tema yang digunakan untuk membangun situs ditentukan dalam file `go.mod`.
+
+Praktik terbaik adalah memperbarui ke versi yang sudah dirilis dan diuji. Untuk memperbarui ke versi tertentu jalankan perintah berikut di terminal/command line (pada direktori root repositori situs Anda):
 
 ```shell
   hugo mod get github.com/chrede88/qubt@vX.Y.Z
 ```
-Replace X,Y & Z with the corresponding version numbers. You can find the releases [here](https://github.com/chrede88/qubt/releases). Please check if any breaking changes are listed under the release you want to update to, before proceeding.
+Ganti X,Y & Z dengan nomor versi yang sesuai. Anda dapat menemukan rilis [disini](https://github.com/chrede88/qubt/releases). Harap periksa apakah ada perubahan besar (breaking changes) yang tercantum pada rilis yang ingin Anda perbarui sebelum melanjutkan.
