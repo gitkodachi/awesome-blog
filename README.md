@@ -1,51 +1,46 @@
 # awesome-blog
 
-Silakan ikuti instruksi di bawah ini untuk menyelesaikan pengaturan situs Qubt baru Anda.
+This is the theme template repository! **Please** follow the installation instructions below.
+If you're looking for the actual theme repository, follow this [link](https://github.com/Chrede88/qubt).
 
-## Instalasi
+## Installation
 
-1. Tambahkan file LICENSE ke repositori Anda.  
-2. Clone template ini ke komputer lokal Anda:  
-   ```shell
-   git clone https://github.com/<username>/<reponame>
-   ```
-   
-3) Ubah file `config/_default/hugo.yaml`, `config/_default/params.yaml` dan `config/_default/menus.yaml` sesuai kebutuhan Anda. Informasi lebih lanjut dapat ditemukan di [wiki](https://github.com/chrede88/qubt/wiki/Configuration).
-4) Tambahkan postingan blog Anda ke folder `content/blog/`. Lihat [wiki](https://github.com/chrede88/qubt/wiki/Content) atau contoh postingan untuk referensi.
-5) Ubah `content/about.md` agar sesuai dengan preferensi Anda.
-6) Jalankan `hugo server` untuk membangun versi lokal situs Anda. Situs bisa dilihat dengan membuka `localhost:1313` di browser (alamat sebenarnya akan muncul di CLI).
-
----
-
-## Konfigurasi
-
-Lihat [wiki](https://github.com/chrede88/qubt/wiki) untuk semua informasi mengenai konfigurasi.
+1) Use this template by pressing `Use this template`. **Don't fork this repository!**
+2) Wait 20s-30s and update the page. The `Clean Template` workflow will run automatically, creating/poplutating files based on your Github user.
+3) Add a LICENSE to your repo.
+4) Clone your version of the template to your local computer:
+```shell
+git clone https://github.com/<username>/<reponame>
+```
+5) Change the module name to match your github repo in `go.mod`.
+6) Modify `config/_default/hugo.yaml`, `config/_default/params.yaml` and `config/_default/menus.yaml` according to to your needs. Find more info on the theme [wiki](https://github.com/chrede88/qubt/wiki/Configuration).
+7) Add your blog posts to `content/blog/`. See the [wiki](https://github.com/chrede88/qubt/wiki/Content) or example posts for reference.
+8) Modify `content/about.md` so it matches your preferences.
+10) Build a local version of your site by executing `hugo server`. You can see the site by navigating to `localhost:1313` (actual URL will be outputted in the CLI) in a browser.
 
 ---
 
-## Memperbarui Versi Tema
+## Features
 
-Versi tema yang digunakan untuk membangun situs ditentukan pada file `go.mod`.
+- Simple personal blog theme, designed for mobile-first.
+- Automatic dark mode (based on system setttings).
+- Emoji support for a fun design.
+- Healthcheck endpoint (/healthcheck.json).
 
-Disarankan untuk memperbarui ke versi yang sudah dirilis dan diuji. Untuk memperbarui ke versi tertentu, jalankan perintah berikut di terminal (pada direktori root repositori situs Anda):
+---
+
+## Configuration
+
+See the [wiki](https://github.com/chrede88/qubt/wiki) for all info about configuration and how to easily deploy to Github Pages.
+
+---
+
+## Update the Theme Version
+The theme version used to build the site is defined in `go.mod` file.
+
+The best practice is to update to released and tested versions. To update to a specific version execute the following command in a terminal/commandline (at the root path of your site repo):
 
 ```shell
-  hugo mod get github.com/Chrede88/qubt@vX.Y.Z
+  hugo mod get github.com/chrede88/qubt@vX.Y.Z
 ```
-Ganti X.Y.Z dengan nomor versi yang sesuai. Daftar rilis bisa ditemukan di [sini](https://github.com/chrede88/qubt/releases). Sebelum memperbarui, pastikan Anda memeriksa apakah ada perubahan besar (breaking changes) pada rilis yang dituju.
-
----
-
-## Deploy ke GitHub Pages
-Anda bisa dengan mudah melakukan deploy situs menggunakan GitHub Pages. Template ini sudah menyertakan workflow GitHub Action yang secara otomatis akan membangun dan mendeploy situs Anda ke GitHub Pages :+1:
-
-`.github/deploymentWorkflow/buildDeploy.yml.` Untuk menggunakannya, pindahkan ke folder `.github/workflows/.`
-
-Workflow ini sudah siap digunakan, tetapi luangkan waktu untuk membacanya dan memahami alurnya. Jika tidak, workflow ini hanya akan menjadi “kotak hitam ajaib” yang sulit diperbaiki saat terjadi masalah!
-
-Langkah terakhir: Masuk ke Settings -> Pages -> Build and deployment -> Source, lalu atur ke GitHub Actions.
-
-Mulai saat itu, setiap kali Anda menerbitkan rilis baru, workflow ini akan membangun dan mendeploy situs Anda :tada:
-
-Situs Anda akan tersedia di URL berikut:
-`https://gitkodachi.github.io/awesome-blog`
+Replace X,Y & Z with the corresponding version numbers. You can find the releases [here](https://github.com/chrede88/qubt/releases). Please check if any breaking changes are listed under the release you want to update to, before proceeding.
