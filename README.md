@@ -8,7 +8,8 @@ Silakan ikuti instruksi di bawah ini untuk menyelesaikan pengaturan situs Qubt b
 2. Clone template ini ke komputer lokal Anda:  
    ```shell
    git clone https://github.com/<username>/<reponame>
-  ```
+   ```
+   
 3) Ubah file `config/_default/hugo.yaml`, `config/_default/params.yaml` dan `config/_default/menus.yaml` sesuai kebutuhan Anda. Informasi lebih lanjut dapat ditemukan di [wiki](https://github.com/chrede88/qubt/wiki/Configuration).
 4) Tambahkan postingan blog Anda ke folder `content/blog/`. Lihat [wiki](https://github.com/chrede88/qubt/wiki/Content) atau contoh postingan untuk referensi.
 5) Ubah `content/about.md` agar sesuai dengan preferensi Anda.
